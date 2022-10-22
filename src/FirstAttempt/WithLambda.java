@@ -15,7 +15,7 @@ public class WithLambda {
         animals.add(new Animal("monkey", 15, false));
         animals.add(new Animal("cheetah", 130, true));
 
-        print(animals, a -> a.canFastRun());
+        print(animals, z -> z.canFastRun());
         // print(animals, Animal :: canFastRun); // - лучше это использовать
     }
     private static void print(List<Animal> animals, CheckTrait checker){
