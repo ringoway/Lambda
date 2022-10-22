@@ -17,8 +17,8 @@ public class WithOutLambda {
 
         print(animals, new CheckIfFastRun());
     }
-    private static void print(List<Animal> animals, CheckTrait checker){
-        for (Animal animal : animals) {
+    private static void print(List<Animal> animals1, CheckTrait checker){
+        for (Animal animal : animals1) {
             if (checker.test(animal))
                 System.out.println(animal + " ");
         }
