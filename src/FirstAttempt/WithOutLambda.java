@@ -15,10 +15,10 @@ public class WithOutLambda {
         animals.add(new Animal("monkey", 15, false));
         animals.add(new Animal("cheetah", 130, true));
 
-        print(animals, z -> z.canFastRun());
+        print(animals, new CheckIfFastRun());
     }
-    private static void print(List<Animal> animals, CheckTrait checker){
-        for (Animal animal : animals) {
+    private static void print(List<Animal> animals1, CheckTrait checker){
+        for (Animal animal : animals1) {
             if (checker.test(animal))
                 System.out.println(animal + " ");
         }
