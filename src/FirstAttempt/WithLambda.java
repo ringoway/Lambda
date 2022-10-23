@@ -28,7 +28,8 @@ public class WithLambda {
         // print(animals, (Animal x, Animal y) -> true);
     }
     private static void print(List<Animal> animals, CheckTrait checker){
-        System.out.println("List of animals whose maximum running speed is more than 40 km/h:");
+
+        System.out.println("List of animals whose maximum running speed is more than 10 km/h:");
         for (Animal animal : animals) {
             if (checker.test(animal)){
                 System.out.println(animal);

@@ -1,13 +1,9 @@
 package FirstAttempt;
-
-import static java.lang.Integer.parseInt;
-
-public class Animal implements Comparable{
+public class Animal implements Comparable<Animal>{
     private final String species;
     private boolean canFastRun;
     private final boolean canSwim;
     private final int maxSpeed;
-    String pars;
 
     public Animal(String species, int maxSpeed, boolean canSwim){
         this.species = species;
@@ -19,21 +15,13 @@ public class Animal implements Comparable{
         return canSwim;
     }
     public boolean canFastRun() {
-        return maxSpeed > 40;
+        int x = 10; //значение минимальной скорости животного
+        return maxSpeed > x;
     }
     public String toString() {
         return species+" and his speed: "+maxSpeed+" km/h";
     }
-
-    public String getSpecies() {
-        return species;
-    }
-    public int getMaxSpeed() {
-        return maxSpeed;
-    }
-
-    public int compareTo(Object o) {
-        Animal a = (Animal) o;
+    public int compareTo(Animal a) {
         return this.maxSpeed - a.maxSpeed;
     }
 }
