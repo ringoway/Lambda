@@ -1,8 +1,8 @@
 package SecondAttempt;
 
-import FirstAttempt.Animal;
+import SecondAttempt.Car;
 
-public class Car implements Comparable<Animal>{
+public class Car implements Comparable<Car>{
     private String brand;
     private String model;
     private int yearOfIssue;
