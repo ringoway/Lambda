@@ -1,6 +1,6 @@
 package ThirdAttempt;
 
-public class House {
+public class House implements Comparable<House>{
     private int area;
     private int price;
     private String city;
@@ -20,6 +20,17 @@ public class House {
             sb.append(", hasFurniture=").append(hasFurniture);
             sb.append("}");
         return sb.toString();
+    }
+
+    @Override
+    public int compareTo(House o) {
+        if (this.area == o.area) {
+            return 0;
+        } else if (this.area < o.area) {
+            return -1;
+        } else {
+            return 1;
+        }
     }
 //    public String toString(){ // 2 вариант
 //        return "House{area ="+area+", price="+price+", city="+city+", hasFurniture"+hasFurniture+"}";
