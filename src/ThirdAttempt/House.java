@@ -13,11 +13,11 @@ public class House implements Comparable<House>{
         this.hasFurniture = hasFurniture;
     }
     public String toString(){ // 1 вариант
-        final StringBuffer sb = new StringBuffer("House{");
-            sb.append("area =").append(area);
-            sb.append(", price=").append(price);
-            sb.append(", city=").append(city);
-            sb.append(", hasFurniture=").append(hasFurniture);
+        final StringBuffer sb = new StringBuffer("House {");
+            sb.append("area = ").append(area);
+            sb.append(", price = ").append(price);
+            sb.append(", city = ").append(city);
+            sb.append(", hasFurniture = ").append(hasFurniture);
             sb.append("}");
         return sb.toString();
     }
