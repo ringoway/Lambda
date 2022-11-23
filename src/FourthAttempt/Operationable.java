@@ -1,5 +1,5 @@
 package FourthAttempt;
 
 public interface Operationable {
-    int resultSum (int a, int b);
+    int calculate (int a, int b);
 }
