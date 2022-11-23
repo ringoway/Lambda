@@ -8,9 +8,14 @@ public class Operation {
         Operationable operationMultiplication = (x,y)->x*y;
         Operationable operationDivision = (x,y) -> x/y;
 
-        System.out.println(operationSum.calculate(10, 20));
-        System.out.println(operationDifference.calculate(10, 20));
-        System.out.println(operationMultiplication.calculate(10,20));
-        System.out.println(operationDivision.calculate(10,20));
+        Double valueS = (double) operationSum.calculate(10, 20);
+        Double valueDf = (double) operationDifference.calculate(10, 20);
+        Double valueM = (double) operationMultiplication.calculate(10,20);
+        Double valueDn = (double) operationDivision.calculate(10,20);
+
+        System.out.println(valueS);
+        System.out.println(valueDf);
+        System.out.println(valueM);
+        System.out.println(valueDn);
     }
 }
