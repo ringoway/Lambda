@@ -17,7 +17,9 @@ public class WithLambda {
         animals.add(new Animal("Cheetah", 130, true));
 
         Collections.sort(animals);
-        print(animals, x -> x.canFastRun());
+        printSpeed(animals, x -> x.canFastRun());
+        System.out.println();
+        printSwim(animals, y -> String.valueOf(y.canSwim()));
         // print(animals, Animal :: canFastRun); // - лучше это использовать
         // print (Animal x) -> {return x.canFastRun();}
 
@@ -27,13 +29,20 @@ public class WithLambda {
         // print(animals, (x, y) -> true);
         // print(animals, (Animal x, Animal y) -> true);
     }
-    private static void print(List<Animal> animals, CheckTrait checker){
+    private static void printSpeed(List<Animal> animals, CheckSpeed checker){
 
         System.out.println("List of animals whose maximum running speed is more than 10 km/h:");
         for (Animal animal : animals) {
-            if (checker.test(animal)){
+            if (checker.checkSpeed(animal)){
                 System.out.println(animal);
             }
+        }
+    }
+    private static void printSwim (List<Animal> animals, CheckSwim c){
+
+        System.out.println("List of animals that can swim (true - yes, false - no):");
+        for (Animal animal : animals) {
+            System.out.println(animal.toString1());
         }
     }
 }
