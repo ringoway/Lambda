@@ -21,7 +21,9 @@ public class Animal implements Comparable<Animal>{
     public String toString() {
         return species+" and his speed: "+maxSpeed+" km/h";
     }
-    public String toString1() {return species+", can swim: "+canSwim;}
+    public String toString1() {
+        return species+", can swim: "+canSwim;
+    }
     public int compareTo(Animal a) {
         return this.maxSpeed - a.maxSpeed;
     }
