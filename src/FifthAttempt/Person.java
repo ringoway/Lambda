@@ -10,8 +10,8 @@ public class Person implements Comparable<Person>{
         this.growth = growth;
         this.weight = weight;
     }
-    public void showGrowth(){
-        System.out.println(name+growth);
+    public int getGrowth(){
+        return growth;
     }
 
     @Override
