@@ -1,5 +1,5 @@
 package FifthAttempt;
 
 public interface CheckGrowth {
-    int checkGrowth(Person x);
+    boolean checkGrowth(Person person);
 }
