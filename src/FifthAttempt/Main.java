@@ -15,13 +15,15 @@ public class Main {
         personList.add(new Person("Sofia", 160, 54));
 
         Collections.sort(personList);
-        printGrowth(personList, x -> x.getGrowth()); //<- нигде не используется интерфейс, в след. раз зафикси, // а также почини рост у людей
+        printGrowth(personList, Person::checkGrowth);
     }
     private static void printGrowth (List<Person> personList, CheckGrowth check){
 
         System.out.println("List persons");
         for (Person person : personList) {
-            System.out.println(person);
+            if (check.checkGrowth(person)) {
+                System.out.println(person);
+            }
         }
     }
 }

@@ -10,15 +10,17 @@ public class Person implements Comparable<Person>{
         this.growth = growth;
         this.weight = weight;
     }
-    public int getGrowth(){
-        return growth;
-    }
 
     @Override
     public int compareTo(Person person) {
-        return this.growth = person.growth;
+        return this.growth - person.growth;
     }
     public String toString(){
         return name + " her growth: "+growth;
+    }
+
+    public boolean checkGrowth() {
+        int x = 162;
+        return growth > x;
     }
 }
