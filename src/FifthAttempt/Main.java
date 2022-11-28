@@ -15,6 +15,7 @@ public class Main {
         personList.add(new Person("Sofia", 160, 54));
 
         Collections.sort(personList);
+
         printGrowth(personList, Person::checkGrowth);
     }
     private static void printGrowth (List<Person> personList, CheckGrowth check){
