@@ -4,23 +4,23 @@ import java.util.Random;
 
 public class Person implements Comparable<Person>{
     private String name;
-    private int growth;
+    private int height;
     private double weight;
     private int id;
 
-    public Person(String name, int growth, double weight) {
+    public Person(String name, int height, double weight) {
         this.name = name;
-        this.growth = growth;
+        this.height = height;
         this.weight = weight;
         this.id = new Random().nextInt(1000);
     }
 
     @Override
     public int compareTo(Person person) {
-        return this.growth - person.growth;
+        return this.height - person.height;
     }
     public String toString(){
-        return name + " her growth: "+growth;
+        return name + " his height: "+height+" cm"+" and his weight: "+ weight+" kg";
     }
     public Integer getId() {
         return id;
@@ -28,6 +28,6 @@ public class Person implements Comparable<Person>{
 
     public boolean checkGrowth() {
         int x = 162;
-        return growth > x;
+        return height > x;
     }
 }
