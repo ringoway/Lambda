@@ -13,6 +13,7 @@ public class Main {
         personList.add(new Person("Egor", 168, 65));
         personList.add(new Person("Gleb", 190, 80));
         personList.add(new Person("Sofia", 160, 54));
+        personList.add(new Person("Kirill", 180,31));
 
         Collections.sort(personList);
 
@@ -20,7 +21,7 @@ public class Main {
     }
     private static void printGrowth (List<Person> personList, CheckGrowth check){
 
-        System.out.println("List persons");
+        System.out.println("Sort people by height:");
         for (Person person : personList) {
             if (check.checkGrowth(person)) {
                 System.out.println(person);
