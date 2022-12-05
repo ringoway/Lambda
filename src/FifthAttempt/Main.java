@@ -14,6 +14,8 @@ public class Main {
         personList.add(new Person("Gleb", 190, 80));
         personList.add(new Person("Sofia", 160, 54));
         personList.add(new Person("Kirill", 180,31));
+        personList.add(new Person("Anna", 149, 78));
+        personList.add(new Person("Kirill", 205,120));
 
         Collections.sort(personList);
 
