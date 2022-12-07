@@ -23,7 +23,7 @@ public class Main {
     }
     private static void printGrowth (List<Person> personList, CheckGrowth check){
 
-        System.out.println("Sort people by height:");
+        System.out.println("Sort people by height: ");
         for (Person person : personList) {
             if (check.checkGrowth(person)) {
                 System.out.println(person);
