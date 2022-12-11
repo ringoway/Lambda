@@ -19,7 +19,7 @@ public class Main {
 
         Collections.sort(personList);
 
-        printGrowth(personList, person->person.checkGrowth());
+        printGrowth(personList, Person::checkGrowth);
     }
     private static void printGrowth (List<Person> personList, CheckGrowth check){
 
