@@ -20,7 +20,7 @@ public class Person implements Comparable<Person>{
         return this.height - person.height;
     }
     public String toString(){
-        return name + " his height: "+height+" cm"+" and his weight: "+ weight+" kg";
+        return name + " his height: "+height+" cm"+" and his weight: "+ weight+" kg.";
     }
     public Integer getId() {
         return id;
